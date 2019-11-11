@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.11.0"
+lock "3.11.2"
 
 set :application, "freemarket_sample_0609b"
 set :repo_url, "git@github.com:OtakeHikaru/freemarket_sample_0609b.git"
@@ -11,7 +11,7 @@ set :rbenv_type, :user
 set :rbenv_ruby, '2.5.1'
 
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['~/.ssh/freemarket_sample_keypair.pem']
+                  keys: ['~/.ssh/free.pem']
 
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
